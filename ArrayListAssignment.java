@@ -56,7 +56,11 @@ public class ArrayListAssignment {
     void display(Scanner sc)
     {
         for(employee e : emp)
-        System.out.println(e);
+	{
+	    System.out.println("Employee ID : " + e.getEmployeeId());
+            System.out.println("Employee Name : " + e.getEmployeeName());
+            System.out.println("Salary : " + e.getSalary());
+	}
     }
 
     void search(Scanner sc)
@@ -67,7 +71,9 @@ public class ArrayListAssignment {
         {
             if(e.getEmployeeId() == id)
             {
-                System.out.println(e);
+                System.out.println("Employee ID : " + e.getEmployeeId());
+            	System.out.println("Employee Name : " + e.getEmployeeName());
+            	System.out.println("Salary : " + e.getSalary());
                 return;
             }
         }
